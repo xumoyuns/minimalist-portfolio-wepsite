@@ -1,0 +1,46 @@
+.sitenav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item + &__item {
+        margin-left: 42px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #33323D;
+        transition: color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    &__link:hover {
+        color: #5FB4A2;
+    }
+
+    &__link:active {
+        opacity: 0.5;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .sitenav {
+        display: none;
+    }
+}

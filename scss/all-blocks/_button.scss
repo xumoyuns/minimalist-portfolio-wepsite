@@ -1,0 +1,21 @@
+.button {
+    margin: 0;
+    padding: 17px 34px;
+    border: 1px solid #33323D;
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #33323D;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.button:hover {
+    background-color: #203A4C;
+    color: #fff;
+}
+
+.button:active {
+    opacity: 0.5;
+}

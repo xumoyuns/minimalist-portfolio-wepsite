@@ -1,0 +1,138 @@
+.footer {
+    background-color: #33323d;
+
+    &__container {
+        padding: 24px 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        margin-right: 48px;
+        flex-shrink: 0;
+        text-decoration: none;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    &__img {
+        display: inline-block;
+        width: 61px;
+        height: 32px;
+    }
+
+    &__list1 {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-right: auto;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__list1-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__list1-item + &__list1-item {
+        margin-left: 42px;
+    }
+
+    &__list1-link {
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ffffff;
+        transition: color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    &__list1-link:hover {
+        color: #5fb4a2;
+    }
+
+    &__list1-link:active {
+        opacity: 0.8;
+    }
+
+    &__list2 {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__list2-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__list2-item + &__list2-item {
+        margin-left: 16px;
+    }
+
+    &__list2-link {
+        text-decoration: none;
+    }
+
+    &__list2-img {
+        color: #fff;
+        transition: color 0.5s ease-in-out;
+    }
+
+    &__list2-img:hover {
+        color: #1e90ff;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__link {
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+
+        &__list1 {
+            margin-right: 0;
+            margin-bottom: 40px;
+        }
+
+        &__list1-item + &__list1-item {
+            margin-left: 42px;
+        }
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .footer {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__link {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+        &__list1 {
+            flex-direction: column;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+        &__list1-item + &__list1-item {
+            margin-left: 0;
+            margin-top: 15px;
+        }
+    }
+}
