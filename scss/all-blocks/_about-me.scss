@@ -1,0 +1,146 @@
+.aboutme {
+    margin-bottom: 150px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 540px;
+    }
+
+    &__img1 {
+        width: 100%;
+        max-width: 281px;
+        display: none;
+    }
+
+    &__right {
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 28px;
+        padding: 0;
+        font-family: Ibarra Real Nova;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+        color: #33323D;
+    }
+
+    &__desc {
+        margin: 0;
+        margin-bottom: 24px;
+        padding: 0;
+        font-size: 16px;
+        line-height: 30px;
+        color: #33323D;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+
+    &__line {
+        margin-bottom: 50px;
+        width: 100%;
+        max-width: 350px;
+        height: 1px;
+        background: #33323D;
+    }
+
+    &__line1 {
+        margin-top: 46px;
+        width: 100%;
+        max-width: 350px;
+        height: 1px;
+        background: #33323D;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .aboutme {
+
+        &__img {
+            display: none;
+        }
+
+        &__img1 {
+            display: inline-block;
+        }
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .aboutme {
+
+        &__right {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        &__line {
+            margin-bottom: 19px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        &__line1 {
+            margin-top: 15px;
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .aboutme {
+        margin-bottom: 115px;
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__img {
+            margin-bottom: 40px;
+            display: inline-block;
+        }
+
+        &__img1 {
+            display: none;
+        }
+
+        &__right {
+            width: 100%;
+            max-width: 540px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__desc {
+            margin-bottom: 41px;
+        }
+
+        &__line {
+            margin-bottom: 32px;
+            width: 100%;
+            max-width: 540px;
+        }
+
+        &__line1 {
+            margin-top: 50px;
+            width: 100%;
+            max-width: 540px;
+        }
+    }
+}
