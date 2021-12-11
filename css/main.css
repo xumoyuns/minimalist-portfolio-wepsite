@@ -982,6 +982,87 @@ img {
   }
 }
 
+.main-bottom {
+  margin-bottom: 150px;
+}
+
+.main-bottom__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-bottom__heading {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 350px;
+  font-family: Ibarra Real Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+}
+
+.main-bottom__line {
+  margin: 0 32px;
+  width: 100%;
+  max-width: 520px;
+  height: 1px;
+  background: #33323D;
+  mix-blend-mode: normal;
+  opacity: 0.15;
+}
+
+.main-bottom__button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media only screen and (max-width: 650px) {
+  .main-bottom {
+    margin-bottom: 96px;
+  }
+  .main-bottom__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-bottom__heading {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .main-bottom__line {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .main-bottom {
+    margin-bottom: 80px;
+  }
+  .main-bottom__heading {
+    width: 100%;
+    max-width: 310px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .main-bottom__line {
+    display: none;
+  }
+}
+
 .footer {
   background-color: #33323d;
 }
