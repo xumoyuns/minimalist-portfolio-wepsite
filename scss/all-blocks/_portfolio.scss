@@ -1,9 +1,9 @@
 .portfolio {
 
-    .container {
-    }
-    &__container {
-    }
+    // .container {
+    // }
+    // &__container {
+    // }
     &__list {
         margin: 0;
 
@@ -26,13 +26,13 @@
         align-items: center;
         margin-bottom: 80px;
     }
-    &__img-box {
-    }
-    &__img {
-    }
+    // &__img-box {
+    // }
+    // &__img {
+    // }
     &__text-box {
-        border-bottom: 1px solid rgba(51, 50, 61, 0.5);
-        border-top: 1px solid rgba(51, 50, 61, 0.5);
+        border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+        border-top: 1px solid rgba(51, 50, 61, 0.15);
         margin-left: 125px;
     }
 
